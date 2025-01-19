@@ -8,7 +8,26 @@
 </head>
 <body>
     <a href="{% url 'home' %}">Go to Home</a>
-    <h1>Inventory</h1>
-    <p>Display inventory here</p>
+    <h1>Computer Inventory</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Computer Name</th>
+                <th>Serial Number</th>
+                <th>Brand</th>
+                <th>Model</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for computer in computers %}
+                <tr>
+                    <td>{{ computer.name }}</td>
+                    <td>{{ computer.serial_number }}</td>
+                    <td>{{ computer.brand }}</td>
+                    <td>{{ computer.model }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
 </body>
 </html>
