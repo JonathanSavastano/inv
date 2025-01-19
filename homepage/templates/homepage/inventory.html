@@ -7,8 +7,15 @@
     <title>Inventory</title>
 </head>
 <body>
-    <a href="{% url 'home' %}">Go to Home</a>
-    <h1>Computer Inventory</h1>
+    <nav>
+        <div>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'inventory' %}">Inventory</a>
+        </div>
+    </nav>
+
+    <main>
+        <h1>Computer Inventory</h1>
     <table border="1">
         <thead>
             <tr>
@@ -29,5 +36,6 @@
             {% endfor %}
         </tbody>
     </table>
+    </main>
 </body>
 </html>

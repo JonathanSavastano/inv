@@ -7,7 +7,15 @@
     <title>Home</title>
 </head>
 <body>
-    <a href="{% url 'inventory' %}">Go to Inventory</a>
-    <h1>Welcome to my Home Page!</h1>
+    <nav>
+        <div>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'inventory' %}">Inventory</a>
+        </div>
+    </nav>
+    
+    <main>
+        <h1>Welcome to my Home Page!</h1>
+    </main>
 </body>
 </html>

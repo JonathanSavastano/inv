@@ -1,6 +1,37 @@
 * {
     font-family: 'Roboto', sans-serif;
     background-color: #010d41;
-    color: #efefef
-    
+    color: #efefef;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+nav {
+    background-color:black;
+    color: #efefef;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: #efefef;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+body {
+    padding-top: 60px;
 }
